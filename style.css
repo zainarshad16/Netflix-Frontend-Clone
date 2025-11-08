@@ -1,0 +1,771 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.main {
+    background-image: url(background-img.jpg);
+    height: 100%;
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    position: relative;
+}
+
+.main .box {
+    background-color: rgba(0, 0, 0, 0.776);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    filter: brightness(1000%);
+}
+
+nav {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 75vw;
+    margin: auto;
+    padding-top: 15px;
+    background-color: transparent;
+}
+
+nav img {
+    width: 154px;
+    height: 54px;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: red;
+    position: relative;
+    z-index: 1;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: 700;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.navbutton {
+    padding: 8px 18px;
+}
+
+.maincontent {
+    color: white;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 600px;
+    margin: auto;
+    padding: 84px;
+    background-color: transparent;
+    height: 100%;
+}
+
+.maincontent span {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    background-color: transparent;
+}
+
+.maincontent .maincontentfirst {
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    justify-content: center;
+}
+
+.maincontent .maincontentsecond {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+}
+
+.maincontent .maincontentthird {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.input button {
+    padding: 5px 5px;
+    font-weight: 700;
+    font-size: 20px;
+    height: 53px;
+    width: 220px;
+}
+
+.maininput {
+    padding: 12px 18px;
+    background-color: rgba(23, 23, 23, 0.82);
+    border: 1px solid rgb(84, 84, 84);
+    border-radius: 6px;
+    width: 450px;
+    height: 53px;
+    cursor: pointer;
+    color: white;
+    box-sizing: border-box;
+}
+
+.maincontent input::placeholder {
+    color: rgb(211, 208, 208);
+}
+
+.second {
+    background-color: black;
+    overflow: hidden;
+}
+
+.second .secondflex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80vw;
+    margin: auto;
+    overflow: hidden;
+}
+
+.second .colorgrade {
+    background-color: transparent;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    position: relative;
+    bottom: 0;
+    border: solid 1px transparent;
+    border-top-left-radius: 100% 100%;
+    border-top-right-radius: 100% 100%;
+    overflow: hidden;
+}
+
+.second .colorgrade2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 78px;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    overflow: hidden;
+    position: relative;
+    border: solid 1px transparent;
+    border-top-left-radius: 0% 100%;
+    border-top-right-radius: 0% 100%;
+}
+
+.second .colorgrade2 span {
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    z-index: 12;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.mainflexcontainer {
+    display: flex;
+    flex-direction: column;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.flexcontainer {
+    height: 340px;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    position: relative;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.flexcontainer::-webkit-scrollbar {
+    display: none;
+}
+
+.flexcontainer img {
+    border: none;
+    border-radius: 12px;
+    width: 200px;
+    height: 280px;
+    position: relative;
+    left: -20px;
+    top: 0px;
+    overflow: hidden;
+}
+
+.number {
+    color: rgb(41, 39, 39);
+    -webkit-text-stroke: 4px white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    font-size: 98px;
+    font-weight: 800;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 12;
+    box-sizing: border-box;
+
+}
+
+.number span {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 12;
+    left: 5px;
+    top: 63px;
+    background-color: transparent;
+}
+
+.third {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80vw;
+    height: 450px;
+    margin: auto;
+}
+
+.third .line {
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    background-color: transparent;
+    margin-top: 50px;
+}
+
+.gridfirst {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    height: 350px;
+    width: 100%;
+    border: transparent;
+    border-radius: 10px;
+    padding: 15px;
+    margin: auto;
+    transition: all 1s ease-out;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.gridfirst span {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: white;
+}
+
+.gridfirst span:nth-child(1) {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.gridfirst span:nth-child(2) {
+    font-size: 16px;
+    font-weight: 400;
+    word-wrap: break-word;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.gridfirst .computer {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    height: 72px;
+    width: 72px;
+}
+
+.third .grid {
+    display: grid;
+    width: 80vw;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.fourth {
+    max-width: 80vw;
+    margin: auto;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    overflow: hidden;
+}
+
+.fourth .fourthmaincontent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 34px 0px 12px 0px;
+}
+
+.fourth .fourthmainbox {
+    margin-bottom: 6px;
+}
+
+.fourth .fourthmainbox:nth-child(7) {
+    margin-bottom: 76px;
+}
+
+
+.fourth .contentbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    max-width: 80vw;
+    margin: auto;
+    height: 53px;
+    background-color: rgb(45, 45, 45);
+}
+
+.fourth .transitionbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    background-color: rgb(45, 45, 45);
+    max-width: 80vw;
+    margin-top: 2px;
+    max-height: 0;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    font-size: 22px;
+    font-weight: 400;
+    transition: max-height 0.5s ease-out 1, padding 0.5s ease-out;
+    text-align: left;
+}
+
+.transitionbox:hover {
+    max-height: 100%;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+}
+
+.contentbox:hover+.transitionbox {
+    margin-bottom: 5px;
+    max-height: 100%;
+    padding: 10px 20px;
+}
+
+.fifth {
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+
+.fifthmaincontent {
+    color: white;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 80vw;
+    margin: auto;
+    background-color: transparent;
+}
+
+.fifthmaincontent .maincontentthird {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    justify-content: center;
+}
+
+.fifthinput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+}
+
+.fifthinput button {
+    padding: 5px 5px;
+    font-weight: 700;
+    font-size: 20px;
+    height: 53px;
+    width: 220px;
+    box-sizing: border-box;
+}
+
+.fifthmaininput {
+    padding: 12px 18px;
+    background-color: rgba(23, 23, 23, 0.82);
+    border: 1px solid rgb(84, 84, 84);
+    border-radius: 6px;
+    width: 450px;
+    height: 53px;
+    cursor: pointer;
+    color: white;
+    box-sizing: border-box;
+}
+
+.fifthmaincontent input::placeholder {
+    color: rgb(211, 208, 208);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    max-width: 80vw;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration-color: rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+}
+
+footer .firstmain {
+    font-size: 18px;
+    padding-top: 34px;
+    text-decoration: underline;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    height: 123px;
+    width: 23vw;
+    gap: 5px;
+    overflow: hidden;
+    text-decoration: underline;
+}
+
+footer .footgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+footer .secondmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid rgb(68, 65, 65);
+    padding: 5px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 34px;
+    color: white;
+}
+
+footer .secondmain span {
+    text-decoration: none;
+}
+
+footer .secondmain:hover {
+    border: 2px solid white;
+}
+
+footer .secondlast {
+    font-size: 15px;
+}
+
+footer .last {
+    padding: 34px 0px;
+    margin-bottom: 134px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer .last a {
+    color: rgb(68, 142, 244);
+}
+
+@media only screen and (max-width:1300px) {
+
+    .third {
+        height: 100%;
+    }
+
+    .gridfirst {
+        height: 230px;
+        width: 100%;
+    }
+
+    .third .grid {
+        display: grid;
+        width: 80vw;
+        margin: auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+}
+
+@media only screen and (max-width:880px) {
+
+    nav {
+        max-width: 90vw;
+    }
+
+    nav img {
+        width: 134px;
+        height: 34px;
+    }
+
+    .maincontent {
+        gap: 10px;
+        max-width: 400px;
+        margin: auto;
+        padding: 84px;
+        background-color: transparent;
+        height: 100%;
+    }
+
+    .maincontent .maincontentfirst {
+        font-size: 32px;
+        font-weight: 800;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .maincontent .maincontentsecond {
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .maincontent .maincontentthird {
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    .input button {
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .second .secondflex {
+        width: 90vw;
+    }
+
+    .second .colorgrade2 span {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .flexcontainer img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .number {
+        font-size: 70px;
+        font-weight: 800;
+    }
+
+    .flexcontainer {
+        height: 220px;
+        width: 90vw;
+    }
+
+    .third {
+        gap: 20px;
+        width: 90vw;
+        height: 100%;
+    }
+
+    .third .line {
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .third .grid {
+        width: 90vw;
+        margin: auto;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        height: 100%;
+    }
+
+    .gridfirst {
+        height: 220px;
+        width: 100%;
+    }
+
+    .fourth {
+        max-width: 90vw;
+    }
+
+    .fourth .contentbox {
+        max-width: 90vw;
+        font-size: 20px;
+    }
+
+    .fourth .fourthmaincontent {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .fourth .transitionbox {
+        max-width: 90vw;
+    }
+
+    .fifthmaincontent {
+        gap: 20px;
+        max-width: 90vw;
+    }
+
+    .fifthinput button {
+        padding: 5px 5px;
+        font-weight: 700;
+        font-size: 20px;
+        height: 53px;
+        width: 150px;
+    }
+
+    .fifthmaininput {
+        width: 65vw;
+        height: 53px;
+    }
+
+    footer {
+        max-width: 90vw;
+    }
+
+    .flex {
+        height: 113px;
+        width: 50vw;
+        gap: 5px;
+    }
+
+    footer .footgrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media only screen and (max-width:620px) {
+
+    nav {
+        max-width: 90vw;
+    }
+
+    nav img {
+        width: 114px;
+        height: 24px;
+    }
+
+    .maincontent {
+        gap: 10px;
+        max-width: 90vw;
+        margin: auto;
+        padding: 84px 0px;
+        background-color: transparent;
+        height: 100%;
+    }
+
+    .input {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .maininput {
+        width: 90vw;
+        height: 53px;
+    }
+
+    .input button {
+        font-size: 18px;
+        width: 133px;
+    }
+
+    .fifth .maincontentthird {
+        text-align: left;
+    }
+
+    .fifthinput {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 8px;
+        background-color: transparent;
+    }
+
+    .fifthinput button {
+        width: 140px;
+    }
+
+    .fifthmaininput {
+        width: 90vw;
+        height: 53px;
+    }
+
+    .flex {
+        height: 113px;
+        width: 50vw;
+        gap: 5px;
+    }
+
+    footer .footgrid {
+        grid-template-columns: 1fr;
+    }
+
+}
